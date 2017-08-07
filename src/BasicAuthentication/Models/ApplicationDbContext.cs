@@ -16,5 +16,11 @@ namespace BasicAuthentication.Models
         {
 
         }
+        //ToDo Models DbSet
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            base.OnModelCreating(builder);
+        }
+        public DbSet<Item> Items { get; set; }
     }
 }
